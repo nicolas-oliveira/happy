@@ -1,6 +1,6 @@
 <div align="center" style="display: flex; flex-direction: column">
 <h1>  
-<img src=".github/logotipo2.png" align="center" width="100">
+<img src=".github/logotipo2.png" align="center" width="150">
 </h1>
 <h2>Because with our app your life is happier!</h2>
 </div>
