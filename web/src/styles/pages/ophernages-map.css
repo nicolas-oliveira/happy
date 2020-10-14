@@ -21,19 +21,22 @@
   font-weight: 800;
   line-height: 42px;
   margin-top: 64px;
+  margin-bottom: 16px;
 }
 
 #page-map aside footer {
   display: flex;
   flex-direction: column;
 
-  line-height: 24px;
+  line-height: 20px;
 }
 
 #page-map aside footer strong {
   font-weight: 800;
 }
-
+#page-map .leaflet-container {
+  z-index: 0;
+}
 #page-map .create-orphanage {
   position: absolute;
   right: 40px;
@@ -43,6 +46,8 @@
   height: 64px;
   background: var(--blue);
   border-radius: 20px;
+
+  z-index: 1;
 
   display: flex;
   justify-content: center;

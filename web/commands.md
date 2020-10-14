@@ -10,3 +10,7 @@ yarn create react-app web --template typescript
 ```
 yarn add react-router-dom
 ```
+
+```
+yarn add leaflet react-leaflet
+```
