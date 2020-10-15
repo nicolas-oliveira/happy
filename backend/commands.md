@@ -44,3 +44,14 @@ Handing with images in backend:
 ```
 yarn add multer
 ```
+Handing with exceptions
+```
+yarn add express-async-errors
+```
+Validation:
+```
+yarn add yup
+```
+```
+yarn add cors
+```
