@@ -36,7 +36,11 @@ Optimization:
   "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
 }
 ```
-
+ORM and Database:
 ```
 yarn add typeorm sqlite3
+```
+Handing with images in backend:
+```
+yarn add multer
 ```

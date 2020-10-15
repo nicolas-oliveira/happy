@@ -3,6 +3,7 @@ import { getRepository } from 'typeorm';
 import Orphanage from '../models/Orphanage';
 
 export default {
+  // List all
   async index(request: Request, response: Response) {
     const orphanagesRepository = getRepository(Orphanage);
 
@@ -11,6 +12,7 @@ export default {
     return response.json(orphanages);
   },
 
+  // List one
   async show(request: Request, response: Response) {
     const { id } = request.params;
 
@@ -33,6 +35,11 @@ export default {
     } = request.body;
   
     const orphanagesRepository = getRepository(Orphanage);
+
+    const requestImages = request.files as Express.Multer.File[]; // explicity type for multi files
+    const images = requestImages.map(image => {
+      return { path: image.filename };
+    });
   
     const orphanage = orphanagesRepository.create({
       name,
@@ -42,6 +49,7 @@ export default {
       instructions,
       opening_hours,
       open_on_weekends,
+      images
     });
   
     await orphanagesRepository.save(orphanage);
