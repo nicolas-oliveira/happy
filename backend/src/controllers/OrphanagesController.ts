@@ -58,7 +58,7 @@ export default {
       opening_hours,
       open_on_weekends,
       images
-    }
+    };
 
     const schema = yup.object().shape({
       name: yup.string().required(),
